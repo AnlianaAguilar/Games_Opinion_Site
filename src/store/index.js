@@ -11,6 +11,11 @@ export default new Vuex.Store({
   getters: {
   },
   mutations: {
+    // SHOW_MODAL(state,id){
+    //   state.games.forEach(game => {
+    //     if()
+    //   });
+    // }
   },
   actions: {
   },
