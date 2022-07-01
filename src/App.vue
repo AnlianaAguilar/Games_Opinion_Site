@@ -16,14 +16,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-3">
-              <router-link to="/"><i class="fa-solid fa-house-chimney"></i> Home </router-link>       
-            </li>
-            <li class="nav-item me-3">
-              <router-link to="/opiniones"><i class="fa-solid fa-comments"></i> Opinion</router-link>      
+            <li class="nav-item">
+              <router-link to="/" class="fw-light text text-decoration-none nav-link active"><i class="fa-solid fa-house-chimney"></i> Home </router-link>       
             </li>
             <li class="nav-item">
-              <router-link to="/administracion"><i class="fa-solid fa-user-gear"></i> Administración</router-link>
+              <router-link to="/opiniones" class="fw-light text text-decoration-none nav-link active"><i class="fa-solid fa-comments"></i> Opinion</router-link>      
+            </li>
+            <li class="nav-item">
+              <router-link to="/administracion" class="fw-light text text-decoration-none nav-link active"><i class="fa-solid fa-user-gear"></i> Administración</router-link>
             </li>
           </ul>
         </div>
