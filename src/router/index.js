@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import OpinionsView from '@/views/OpinionsView.vue'
 import AdministrationView from '@/views/AdministrationView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 Vue.use(VueRouter)
 
@@ -19,7 +20,11 @@ const routes = [
   {
     path: '/administracion',
     component: AdministrationView,
-  }
+  },
+  {
+    path: '*',
+    component: NotFoundView,
+  },
 ]
 
 const router = new VueRouter({
