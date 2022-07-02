@@ -22,8 +22,8 @@
           <th scope="row">{{index}}</th>
           <td>{{opinion.id}}</td>
           <td>{{ opinion.nameUser }}</td>
-          <td>{{ opinion.opinionUser }}</td>
           <td>{{ opinion.gameUser }}</td>
+          <td>{{ opinion.opinionUser }}</td>
           <td>
             <button class="mx-3" @click="remove(index)">Eliminar</button>
             <button @click="edit(opinion.id)">Editar</button>
