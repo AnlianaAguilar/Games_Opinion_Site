@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import OpinionsView from '@/views/OpinionsView.vue'
 import AdministrationView from '@/views/AdministrationView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
+import EditarView from '@/views/EditarView.vue'
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,12 @@ const routes = [
     path: '*',
     component: NotFoundView,
   },
+  {
+    path: '/editar/:id',
+    props: true,
+    component: EditarView,
+  },
+
 ]
 
 const router = new VueRouter({
