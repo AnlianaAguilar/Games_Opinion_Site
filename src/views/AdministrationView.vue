@@ -1,10 +1,12 @@
 <template>
-    <div>
-        <h1>Administración</h1>
+    <div class="container my-5">
+        <h1>Administrando Lista de Opiniones</h1>
+        <administrationList></administrationList>
     </div>
 </template>
 
 <script>
+import AdministrationList from '@/components/AdministrationList.vue'
 export default {
     name: 'administrationView',
     // props: {},
@@ -14,7 +16,9 @@ export default {
     // computed: {},
     //methods: {}
     // watch: {},
-    // components: {},
+    components: {
+        AdministrationList
+    },
     // mixins: [],
     // filters: {},
     // -- Lifecycle Methods
