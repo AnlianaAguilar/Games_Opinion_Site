@@ -1,40 +1,40 @@
 <template>
-    <div>
-        <h1>Editando Opiniones de: {{data.gameUser}}</h1>
-       <label for="">nombre</label>
-       <input type="text" v-model="data.nameUser">
-        <label for="">Opinion</label>
-       <textarea name="" id="" cols="30" rows="10" v-model="data.opinionUser"></textarea>
-       <button><router-link to='/administracion'>Regresar</router-link></button>
-       <button @click="add(data.gameUser)">Guardar</button>
+  <div class="container">
+    <h1 class="fs-sm-6 fs-1">Editando Opiniones de: {{ data.gameUser }}</h1>
+    <div class="container text-start ">
+        <label class="fs-6">Nombre: </label>
+        <input type="text" v-model="data.nameUser" />
+        <label class="fs-6">Opinion: </label>
+        <textarea cols="30" rows="10" v-model="data.opinionUser" ></textarea>
+        <div class="d-grid gap-2 d-md-block text-start">
+            <button class="btn btn-primary" type="button"><router-link class="text-decoration-none text-white"  to="/administracion">Regresar</router-link></button>
+            <button class="btn btn-info" type="button" @click="editGame">Guardar</button>
+        </div>
     </div>
+  </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters } from "vuex";
 
 export default {
-    name: 'EditarView',
-    props: [
-        'id'
-    ],
-    data: function(){
-        return {
-            data:{},
-        }
-    },
-    computed: {
-        ...mapGetters(['showOpinions'])
-    },
-    created(){
-        let resultado = this.showOpinions.find(opinion=> opinion.id==this.id)
-        //console.log(resultado)
-        this.data=resultado
-    },
-    methods: {
-         ...mapActions(["addOpinions"]),
-
-    add(juego) {
+  name: "EditarView",
+  props: ["id"],
+  data: function () {
+    return {
+      data: {},
+    };
+  },
+  computed: {
+    ...mapGetters(["showOpinions"]),
+  },
+  created() {
+    let resultado = this.showOpinions.find((opinion) => opinion.id == this.id);
+    //console.log(resultado)(data.gameUser)(juego)
+    this.data = resultado;
+  },
+  methods: {
+    editGame() {
       let valid = true;
 
       if (this.data.nameUser == "") {
@@ -46,28 +46,30 @@ export default {
         alert("Requiere colocar una Opinion");
       }
       if (valid) {
-        alert("Editar a la opinion");
-        let opinion = {
-          nameUser: this.nameUser,
-          opinionUser: this.opinionUser,
-          gameUser: juego,
-        };
-        this.addOpinions(opinion);
-        console.log(opinion);
-        this.nameUser = "";
-        this.opinionUser = "";
+        alert("Desea guardar la opinion del juegostss");
       }
     },
-    },
-    // watch: {},
-    // components: {},
-    // mixins: [],
-    // filters: {},
-    // -- Lifecycle Methods
-    // -- End Lifecycle Methods
-}
+  },
+  // watch: {},
+  // components: {},
+  // mixins: [],
+  // filters: {},
+  // -- Lifecycle Methods
+  // -- End Lifecycle Methods
+};
 </script>
-
-<style scoped>
     
+<style scoped>
+    label, input, textarea, div{
+        display: block;
+        margin-top: 1%;
+    }
+    input, textarea{
+        width: 100%;
+    }
+    button{
+        margin-right: 2%;
+    }
+    
+
 </style>

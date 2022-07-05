@@ -25,8 +25,8 @@
           <td>{{ opinion.gameUser }}</td>
           <td>{{ opinion.opinionUser }}</td>
           <td>
-            <button class="mx-3" @click="remove(index)">Eliminar</button>
-            <button @click="edit(opinion.id)">Editar</button>
+            <button class="mx-3 btn btn-danger" @click="remove(index)">Eliminar</button>
+            <button class="btn btn-info" @click="edit(opinion.id)">Editar</button>
           </td>
         </tr>
       </tbody>

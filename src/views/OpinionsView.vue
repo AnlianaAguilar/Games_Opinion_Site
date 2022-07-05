@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="container my-5">
+    <h2>Lista de Opiniones</h2>
     <opinionsList></opinionsList>
   </div>
 </template>

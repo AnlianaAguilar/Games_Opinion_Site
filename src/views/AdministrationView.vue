@@ -1,6 +1,6 @@
 <template>
     <div class="container my-5">
-        <h1>Administrando Lista de Opiniones</h1>
+        <h2>Administrando Lista de Opiniones</h2>
         <administrationList></administrationList>
     </div>
 </template>

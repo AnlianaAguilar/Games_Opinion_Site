@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div
-        class="col-12 col-lg-3 card mx-3 mt-3 text-start"
+        class="col-12 col-lg-3 card mx-3 mt-3 text-start px-0"
         v-for="(game, index) in games"
         :key="index"
       >
@@ -54,7 +54,7 @@
                   type="text"
                   v-model="nameUser"
                   placeholder="Escriba su nombre"
-                /><br />
+                />
                 <label for="">Opiniones</label>
                 <textarea
                   v-model="opinionUser"
@@ -142,4 +142,13 @@ export default {
 </script>
 
 <style scoped>
+
+    label, input, textarea{
+        display: block;
+        margin-top: 1%;
+    }
+    input, textarea{
+        width: 100%;
+    }
+
 </style>

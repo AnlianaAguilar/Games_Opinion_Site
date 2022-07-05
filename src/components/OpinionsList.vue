@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container my-5">
     <div
       class="alert alert-danger"
       v-if="this.showOpinions <= 0"
