@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import games from './games.json'
+import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex)
 
@@ -24,7 +25,7 @@ export default new Vuex.Store({
       //let index = state.opiniones.findIndex((opin)=>opin.id==id)
       state.opiniones.splice(index,1)
     }
-    
+
   },
   actions: {
     addOpinions:({commit},opinion)=>{
@@ -36,5 +37,6 @@ export default new Vuex.Store({
     }
   },
   modules: {
-  }
+  },
+  plugins: [createPersistedState()]
 })
