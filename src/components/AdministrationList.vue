@@ -59,7 +59,7 @@ export default {
       },
 
       edit(id){
-          alert(id)
+          // alert(id)
           this.$router.push(`/editar/${id}`)
       }
   },

@@ -14,17 +14,30 @@
         "background_image": "https://pivigames.blog/wp-content/uploads/2018/07/portal-2-mac-2844-0-min.jpg"
     },
     {
-        "name": "Grand Theft Auto V",
+        "name": "Deaths Gambit",
         "rating": 4.48,
-        "released": "2013-09-17",
-        "updated": "2020-09-23",
-        "background_image": "https://cdn.forbes.com.mx/2020/05/Grand-Theft-Auto-V-640x360.jpg"
+        "released": "2018-08-12",
+        "updated": "2021-11-30",
+        "background_image": "https://pivigames.blog/wp-content/uploads/2018/08/Deaths-Gambit-Free-Download-min-576x356.jpg"
     },
     {
-        "name": "Grand Theft Auto V",
-        "rating": 4.48,
-        "released": "2013-09-17",
-        "updated": "2020-09-23",
-        "background_image": "https://cdn.forbes.com.mx/2020/05/Grand-Theft-Auto-V-640x360.jpg"
+        "name": "Anno 2070",
+        "rating": 4.24,
+        "released": "2011-11-17",
+        "updated": "2022-02-10",
+        "background_image": "https://pivigames.blog/wp-content/uploads/2018/08/Anno-2070-min-576x350.jpg"
+    },    {
+        "name": "Agony",
+        "rating": 4.8,
+        "released": "2018-05-29",
+        "updated": "2022-02-18",
+        "background_image": "https://pivigames.blog/wp-content/uploads/2018/05/Agony-Free-Download-min-576x356.jpg"
+    },
+    {
+        "name": "Crysis Warhead",
+        "rating": 4.6,
+        "released": "2011-04-18",
+        "updated": "2018-08-03",
+        "background_image": "https://pivigames.blog/wp-content/uploads/2018/01/0000005241.600x338-min.jpg"
     }
 ]
