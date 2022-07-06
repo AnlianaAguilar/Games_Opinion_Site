@@ -46,7 +46,7 @@ export default {
         alert("Requiere colocar una Opinion");
       }
       if (valid) {
-        alert("Desea guardar la opinion del juegostss");
+        alert("Desea guardar los cambios?");
       }
     },
   },
